@@ -1,0 +1,537 @@
+{
+  "id": "ae507e6c-f3ce-4271-8e30-77f6cd595bff",
+  "version": "2.0",
+  "name": "tests-webequiposesion04",
+  "url": "http://ortega2web.eastus.cloudapp.azure.com",
+  "tests": [{
+    "id": "74238c58-479d-4cf2-9292-0caeb262270c",
+    "name": "test team page",
+    "commands": [{
+      "id": "206ff87a-3f17-4a51-b6b8-b59998b8e4c3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68d1ebdf-8aea-4097-958b-75a389928379",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6887bee9-e9cb-41dc-99f1-73fd17296c63",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "HMIS2021-Ortega²",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1b8b330-77c5-46b3-b46c-a4c0e811ee0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.masthead-heading",
+      "targets": [
+        ["css=.masthead-heading", "css:finder"],
+        ["xpath=//body[@id='page-top']/header/div/div", "xpath:idRelative"],
+        ["xpath=//header/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4145c9de-ef1a-4f2b-84e2-ea09a710e3d7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.masthead-heading",
+      "targets": [
+        ["css=.masthead-heading", "css:finder"],
+        ["xpath=//body[@id='page-top']/header/div/div", "xpath:idRelative"],
+        ["xpath=//header/div/div", "xpath:position"]
+      ],
+      "value": "ORTEGA²"
+    }, {
+      "id": "f9b4249c-4df7-40a4-a65a-d5512f9d7911",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sobre nosotros')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#about')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc756754-031f-44d9-87cc-c7472f0386fc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#about .section-heading",
+      "targets": [
+        ["css=#about .section-heading", "css:finder"],
+        ["xpath=//section[@id='about']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "ENLACES"
+    }, {
+      "id": "6a71b251-97f9-4365-ab57-33c8c46c3380",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1) > .timeline-panel a",
+      "targets": [
+        ["linkText=https://github.com/joa102/hmis-sesion04", "linkText"],
+        ["css=li:nth-child(1) > .timeline-panel a", "css:finder"],
+        ["xpath=//a[contains(text(),'https://github.com/joa102/hmis-sesion04')]", "xpath:link"],
+        ["xpath=//section[@id='about']/div/ul/li/div[2]/div[2]/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://github.com/joa102/hmis-sesion04')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'https://github.com/joa102/hmis-sesion04')]", "xpath:innerText"]
+      ],
+      "value": "https://github.com/joa102/hmis-sesion04"
+    }, {
+      "id": "a9bd2947-f26f-4bca-b163-23c9baf7aa56",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.timeline-inverted:nth-child(2) a",
+      "targets": [
+        ["linkText=https://github.com/ualhmis/", "linkText"],
+        ["css=.timeline-inverted:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'https://github.com/ualhmis/')]", "xpath:link"],
+        ["xpath=//section[@id='about']/div/ul/li[2]/div[2]/div[2]/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://github.com/ualhmis/')]", "xpath:href"],
+        ["xpath=//li[2]/div[2]/div[2]/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'https://github.com/ualhmis/')]", "xpath:innerText"]
+      ],
+      "value": "https://github.com/ualhmis/"
+    }, {
+      "id": "44407686-448e-4033-8d22-8e780ca01961",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//section[@id='about']/div/ul/li[2]/div[2]/div[2]/p/a",
+      "targets": [
+        ["linkText=https://github.com/ualhmis/", "linkText"],
+        ["css=.timeline-inverted:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'https://github.com/ualhmis/')]", "xpath:link"],
+        ["xpath=//section[@id='about']/div/ul/li[2]/div[2]/div[2]/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://github.com/ualhmis/')]", "xpath:href"],
+        ["xpath=//li[2]/div[2]/div[2]/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'https://github.com/ualhmis/')]", "xpath:innerText"]
+      ],
+      "value": "https://github.com/ualhmis/"
+    }, {
+      "id": "af8297d6-7900-483e-a6bf-bb1fede42e64",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.timeline-inverted:nth-child(4) a",
+      "targets": [
+        ["linkText=https://portal.azure.com/#home", "linkText"],
+        ["css=.timeline-inverted:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'https://portal.azure.com/#home')]", "xpath:link"],
+        ["xpath=//section[@id='about']/div/ul/li[4]/div[2]/div[2]/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://portal.azure.com/#home')]", "xpath:href"],
+        ["xpath=//li[4]/div[2]/div[2]/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'https://portal.azure.com/#home')]", "xpath:innerText"]
+      ],
+      "value": "https://portal.azure.com/#home"
+    }, {
+      "id": "b479bead-4883-4e25-9952-72048fa97ba6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Miembros')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#team')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6ebc3ae-f87b-4b7a-90c3-abfa4db99da2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#team .section-heading",
+      "targets": [
+        ["css=#team .section-heading", "css:finder"],
+        ["xpath=//section[@id='team']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div/h2", "xpath:position"]
+      ],
+      "value": "MIEMBROS DEL EQUIPO"
+    }, {
+      "id": "09b04fd7-1d5e-457b-9099-27feae34689c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-lg-6:nth-child(1) h4",
+      "targets": [
+        ["css=.col-lg-6:nth-child(1) h4", "css:finder"],
+        ["xpath=//section[@id='team']/div/div[2]/div/div/h4", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Juan Diego Ortega')]", "xpath:innerText"]
+      ],
+      "value": "Juan Diego Ortega"
+    }, {
+      "id": "efd3ed3b-49c4-42ad-a5ed-f3dab15a818f",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=//*[@id=\"team\"]/div/div[2]/div[1]/div/a[2]@href",
+      "targets": [],
+      "value": "github"
+    }, {
+      "id": "e5530628-4a1b-4af9-a492-2790716d2484",
+      "comment": "",
+      "command": "assert",
+      "target": "github",
+      "targets": [],
+      "value": "https://github.com/joa102/"
+    }, {
+      "id": "78d6628f-8dbe-43ac-b819-a9ba2f8becb9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-lg-6:nth-child(2) h4",
+      "targets": [
+        ["css=.col-lg-6:nth-child(2) h4", "css:finder"],
+        ["xpath=//section[@id='team']/div/div[2]/div[2]/div/h4", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Ruben Ortega')]", "xpath:innerText"]
+      ],
+      "value": "Ruben Ortega"
+    }, {
+      "id": "951c1209-c1ae-4b99-aec3-1e1eef04dc06",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=//*[@id=\"team\"]/div/div[2]/div[2]/div/a[2]@href",
+      "targets": [],
+      "value": "github"
+    }, {
+      "id": "728dea74-a158-4f82-bd55-e2a559f7dafa",
+      "comment": "",
+      "command": "assert",
+      "target": "github",
+      "targets": [],
+      "value": "https://github.com/roe963"
+    }, {
+      "id": "5e9b061f-feac-40ee-8c48-074110daba0d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7893db93-99f0-402e-a89d-fcb244725828",
+    "name": "test Ruben's page",
+    "commands": [{
+      "id": "7a827467-6cab-4fc5-be95-5c2fcf884e5e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90a00397-a01f-4562-9d8c-ed57a3114b84",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f4c1740-c0b7-45ea-afc2-a938f4543342",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Miembros')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#team')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29407110-fda4-462f-9f64-ace40954149e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-6:nth-child(2) .mx-auto",
+      "targets": [
+        ["css=.col-lg-6:nth-child(2) .mx-auto", "css:finder"],
+        ["xpath=//section[@id='team']/div/div[2]/div[2]/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21278e19-3511-4169-a805-388b88507a8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.masthead-heading",
+      "targets": [
+        ["css=.masthead-heading", "css:finder"],
+        ["xpath=//body[@id='page-top']/header/div/div", "xpath:idRelative"],
+        ["xpath=//header/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64baf695-3a4a-436a-a185-4222e8aa8be5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.masthead-heading",
+      "targets": [
+        ["css=.masthead-heading", "css:finder"],
+        ["xpath=//body[@id='page-top']/header/div/div", "xpath:idRelative"],
+        ["xpath=//header/div/div", "xpath:position"]
+      ],
+      "value": "RUBEN ORTEGA"
+    }, {
+      "id": "94b72624-e302-4078-8952-a63792b22f72",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.mx-auto",
+      "targets": [
+        ["css=.mx-auto", "css:finder"],
+        ["xpath=//body[@id='page-top']/header/div/img", "xpath:idRelative"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "187b442f-5e15-4db9-a8f6-2ecc656c070b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-heading",
+      "targets": [
+        ["css=.section-heading", "css:finder"],
+        ["xpath=//section[@id='about']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3216089a-f8cb-4029-a383-84c319eb8357",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=//*[@id=\"page-top\"]/header/div/a@href",
+      "targets": [],
+      "value": "github"
+    }, {
+      "id": "e462044d-9a1e-46ad-ba1d-da9182448dab",
+      "comment": "",
+      "command": "assert",
+      "target": "github",
+      "targets": [],
+      "value": "https://github.com/roe963"
+    }, {
+      "id": "921a6e64-59f1-4317-89a7-ef0437153928",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sobre mi')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#about')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dce7172-527c-4805-8ed8-d36b0cf4cc29",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.section-heading",
+      "targets": [
+        ["css=.section-heading", "css:finder"],
+        ["xpath=//section[@id='about']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "MIS AFICIONES"
+    }, {
+      "id": "f5fd98b3-2311-4e88-8c4b-3e10a612184c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-md-4:nth-child(2)",
+      "targets": [
+        ["css=.col-md-4:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='about']/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62a1b6bb-85dc-44c1-ae95-91ec777950b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//nav[@id='mainNav']/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c0a621a-a555-4afb-8665-086c8ee94723",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3a5c7bfc-2708-4918-a142-d25d92123d34",
+    "name": "test Juandi's page",
+    "commands": [{
+      "id": "46e7ef62-6631-412f-be5f-e0d4a0ad09dd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b2478f9-fdc8-43c2-ac90-7aa1aa26f7f1",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a7b69f2-2831-4d66-ba2d-fb2e922362e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Miembros')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#team')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87541b22-30d1-4ee4-be12-57083b4e593b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-6:nth-child(1) .mx-auto",
+      "targets": [
+        ["css=.col-lg-6:nth-child(1) .mx-auto", "css:finder"],
+        ["xpath=//section[@id='team']/div/div[2]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f22465d0-5f4c-4a13-926d-1fb6385dc46c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.masthead-heading",
+      "targets": [
+        ["css=.masthead-heading", "css:finder"],
+        ["xpath=//body[@id='page-top']/header/div/div", "xpath:idRelative"],
+        ["xpath=//header/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5eb1d85d-f57c-4e6c-9692-f7c34d049e3f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.masthead-heading",
+      "targets": [
+        ["css=.masthead-heading", "css:finder"],
+        ["xpath=//body[@id='page-top']/header/div/div", "xpath:idRelative"],
+        ["xpath=//header/div/div", "xpath:position"]
+      ],
+      "value": "JUAN DIEGO ORTEGA"
+    }, {
+      "id": "903fb644-0203-4ee3-ae69-bd61e24f9998",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.mx-auto",
+      "targets": [
+        ["css=.mx-auto", "css:finder"],
+        ["xpath=//body[@id='page-top']/header/div/img", "xpath:idRelative"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6d4c370-1476-4ca6-9ae1-ebcd9848f10b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-heading",
+      "targets": [
+        ["css=.section-heading", "css:finder"],
+        ["xpath=//section[@id='about']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "055d11fc-70ef-4366-9519-7b15822983d3",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=//*[@id=\"page-top\"]/header/div/a@href",
+      "targets": [],
+      "value": "github"
+    }, {
+      "id": "751b6be6-3640-45ba-a1ae-8c2ce058b762",
+      "comment": "",
+      "command": "assert",
+      "target": "github",
+      "targets": [],
+      "value": "https://github.com/joa102/"
+    }, {
+      "id": "b3b541e5-1c59-4d79-add1-560aa73b9ae4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sobre mi')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#about')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc31bc25-7481-4e6e-9730-c1cd12c50d8d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.section-heading",
+      "targets": [
+        ["css=.section-heading", "css:finder"],
+        ["xpath=//section[@id='about']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "MIS AFICIONES"
+    }, {
+      "id": "b4b439b8-fcbf-4f44-8ee5-e03651ba0351",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-md-4:nth-child(2)",
+      "targets": [
+        ["css=.col-md-4:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='about']/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "219fca23-539b-4ea1-abdb-0de0c83bdddb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//nav[@id='mainNav']/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "007aee32-32d0-4657-9aef-77641e2f5a5a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f0e8021d-f38b-4ec7-8aa0-6475e519105c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["74238c58-479d-4cf2-9292-0caeb262270c", "7893db93-99f0-402e-a89d-fcb244725828", "3a5c7bfc-2708-4918-a142-d25d92123d34"]
+  }],
+  "urls": ["http://ortega2web.eastus.cloudapp.azure.com/"],
+  "plugins": []
+}
