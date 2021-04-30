@@ -34,7 +34,7 @@ public class SailsEditUserTest {
     JavascriptExecutor js;
 
     // Browser selector
-    int browser = 1; // 0: firefox, 1: chrome,...
+    int browser = 0; // 0: firefox, 1: chrome,...
 
     @Before
     public void setUp() {
